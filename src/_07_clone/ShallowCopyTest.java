@@ -1,3 +1,5 @@
+package _07_clone;
+
 class Person implements Cloneable {
   //Lower-level object
   private Car car;
@@ -22,9 +24,12 @@ class Person implements Cloneable {
   }
 
   public Object clone() {
-    //Deep copy
-    Person p = new Person(name, car.getName());
-    return p;
+    //shallow copy
+    try {
+      return super.clone();
+    } catch (CloneNotSupportedException e) {
+      return null;
+    }
   }
 }
 
@@ -45,7 +50,7 @@ class Car {
   }
 }
 
-public class DeepCopyTest {
+public class ShallowCopyTest {
 
   public static void main(String[] args) {
     //Original Object

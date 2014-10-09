@@ -1,10 +1,12 @@
-class Person {
+package _07_clone;
+
+class Person1 {
 }
 
-class Hero extends Person {
+class Hero extends Person1 {
 }
 
-class Scientist extends Person implements Cloneable {
+class Scientist extends Person1 implements Cloneable {
   public Object clone() {
     try {
       return super.clone();
@@ -20,7 +22,7 @@ class MadScientist extends Scientist {
 
 public class HorrorFlick {
   public static void main(String[] args) {
-    Person p = new Person();
+    Person1 p = new Person1();
     Hero h = new Hero();
     Scientist s = new Scientist();
     MadScientist m = new MadScientist();

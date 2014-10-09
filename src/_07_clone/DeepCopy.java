@@ -1,3 +1,5 @@
+package _07_clone;
+
 import junit.framework.*;
 
 class DepthReading implements Cloneable {
@@ -106,27 +108,26 @@ class OceanReading implements Cloneable {
     return "temperature: " + temperature + ", depth: " + depth;
   }
 }
-
 public class DeepCopy extends TestCase {
-  public DeepCopy(String name) {
-    super(name);
-  }
+	public DeepCopy(String name) {
+		super(name);
+	}
 
-  public void testClone() {
-    OceanReading reading = new OceanReading(33.9, 100.5);
-    // Now clone it:
-    OceanReading clone = (OceanReading) reading.clone();
-    TemperatureReading tr = clone.getTemperatureReading();
-    tr.setTemperature(tr.getTemperature() + 1);
-    clone.setTemperatureReading(tr);
-    DepthReading dr = clone.getDepthReading();
-    dr.setDepth(dr.getDepth() + 1);
-    clone.setDepthReading(dr);
-    assertEquals(reading.toString(), "temperature: 33.9, depth: 100.5");
-    assertEquals(clone.toString(), "temperature: 34.9, depth: 101.5");
-  }
+	public void testClone() {
+		OceanReading reading = new OceanReading(33.9, 100.5);
+		// Now clone it:
+		OceanReading clone = (OceanReading) reading.clone();
+		TemperatureReading tr = clone.getTemperatureReading();
+		tr.setTemperature(tr.getTemperature() + 1);
+		clone.setTemperatureReading(tr);
+		DepthReading dr = clone.getDepthReading();
+		dr.setDepth(dr.getDepth() + 1);
+		clone.setDepthReading(dr);
+		assertEquals(reading.toString(), "temperature: 33.9, depth: 100.5");
+		assertEquals(clone.toString(), "temperature: 34.9, depth: 101.5");
+	}
 
-  public static void main(String[] args) {
-    junit.textui.TestRunner.run(DeepCopy.class);
-  }
-} ///:~
+	public static void main(String[] args) {
+		junit.textui.TestRunner.run(DeepCopy.class);
+	}
+}

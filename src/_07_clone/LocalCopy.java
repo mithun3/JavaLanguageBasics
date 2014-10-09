@@ -1,3 +1,5 @@
+package _07_clone;
+
 class MyObject implements Cloneable {
   private int n;
 

@@ -1,3 +1,5 @@
+package _07_clone;
+
 class Ordinary {
 }
 

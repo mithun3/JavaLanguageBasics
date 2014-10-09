@@ -1,4 +1,6 @@
-class Person implements Cloneable {
+package _07_clone;
+
+class Person2 implements Cloneable {
   //Lower-level object
   private Car car;
 
@@ -16,22 +18,19 @@ class Person implements Cloneable {
     name = s;
   }
 
-  public Person(String s, String t) {
+  public Person2(String s, String t) {
     name = s;
     car = new Car(t);
   }
 
   public Object clone() {
-    //shallow copy
-    try {
-      return super.clone();
-    } catch (CloneNotSupportedException e) {
-      return null;
-    }
+    //Deep copy
+    Person2 p = new Person2(name, car.getName());
+    return p;
   }
 }
 
-class Car {
+class Car2 {
 
   private String name;
 
@@ -43,12 +42,12 @@ class Car {
     name = s;
   }
 
-  public Car(String s) {
+  public Car2(String s) {
     name = s;
   }
 }
 
-public class ShallowCopyTest {
+public class DeepCopyTest {
 
   public static void main(String[] args) {
     //Original Object

@@ -1,3 +1,5 @@
+package _07_clone;
+
 public class Snake implements Cloneable {
 
   private Snake next;

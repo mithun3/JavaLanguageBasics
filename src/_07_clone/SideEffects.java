@@ -1,3 +1,7 @@
+package _07_clone;
+
+import java.util.Date;
+
 class Enemy {
   public void munge(SideEffects md) {
     System.out.println("Object is " + md);

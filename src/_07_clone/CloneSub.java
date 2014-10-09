@@ -1,3 +1,5 @@
+package _07_clone;
+
 class One extends java.lang.Object {
   int x;
 }

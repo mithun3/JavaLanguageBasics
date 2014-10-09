@@ -1,3 +1,5 @@
+package _07_clone;
+
 public class Clone1 implements Cloneable {
 
   /** Clone this object. Call super.clone() to do the work */
