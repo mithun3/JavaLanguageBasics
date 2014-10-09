@@ -1,3 +1,5 @@
+package _04_class_defenition;
+
 public class Visibility {
   final int i = 42;
   void method1() {

@@ -1,3 +1,5 @@
+package _04_class_defenition;
+
 public class TestDeclare {
   public static void main(String args[]) {
     String str = "blah";

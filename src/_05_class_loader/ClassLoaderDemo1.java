@@ -1,3 +1,5 @@
+package _05_class_loader;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Hashtable;

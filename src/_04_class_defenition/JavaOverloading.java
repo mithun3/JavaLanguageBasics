@@ -1,3 +1,5 @@
+package _04_class_defenition;
+
 class Tree {
   int height;
 

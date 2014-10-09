@@ -1,3 +1,5 @@
+package _05_class_loader;
+
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
