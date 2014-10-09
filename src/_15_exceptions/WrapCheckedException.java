@@ -1,6 +1,8 @@
+package _15_exceptions;
+
 import java.io.*;
 
-class WrapCheckedException {
+class TurnOffChecking {
   void throwRuntimeException(int type) {
     try {
       switch(type) {
@@ -17,11 +19,11 @@ class WrapCheckedException {
 
 class SomeOtherException extends Exception {}
 
-public class TurnOffChecking {
+public class WrapCheckedException {
 
   public static void main(String[] args) {
 
-    WrapCheckedException wce = new WrapCheckedException();
+	  TurnOffChecking wce = new TurnOffChecking();
     // You can call f() without a try block, and let
     // RuntimeExceptions go out of the method:
 

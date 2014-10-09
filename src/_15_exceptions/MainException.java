@@ -1,3 +1,5 @@
+package _15_exceptions;
+
 import java.io.FileInputStream;
 
 public class MainException {

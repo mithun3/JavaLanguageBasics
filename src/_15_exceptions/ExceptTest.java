@@ -1,3 +1,5 @@
+package _15_exceptions;
+
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

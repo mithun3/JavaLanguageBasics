@@ -1,7 +1,9 @@
-public class ExceptionDemo {
+package _15_exceptions;
+
+public class ExceptionDemo2 {
 
   public static void main(String[] argv) {
-    new ExceptionDemo().doTheWork();
+    new ExceptionDemo2().doTheWork();
   }
 
   /** This method demonstrates calling a method that might throw
@@ -16,6 +18,10 @@ public class ExceptionDemo {
       } catch (IllegalArgumentException e) {
         System.err.println("Error: (" + e.getMessage() + ").");
         return;    // cut off println below if makeObj failed.
+      } finally {
+        System.err.println("All done");
+        if (o==null)
+          System.exit(0);
       }
       System.out.println(o);  // process the created object in some way
     }

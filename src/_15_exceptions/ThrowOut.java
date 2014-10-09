@@ -1,3 +1,5 @@
+package _15_exceptions;
+
  public class ThrowOut {
   public static void main(String[] args) throws Throwable {
     try {

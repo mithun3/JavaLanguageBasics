@@ -1,3 +1,5 @@
+package _15_exceptions;
+
 public class Rethrowing {
 
   public static void f() throws Exception {

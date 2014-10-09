@@ -1,3 +1,5 @@
+package _15_exceptions;
+
 class OneException extends Exception {
   public OneException(String s) {
     super(s);

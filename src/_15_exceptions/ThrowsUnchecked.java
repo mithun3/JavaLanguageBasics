@@ -1,3 +1,5 @@
+package _15_exceptions;
+
 public class ThrowsUnchecked {
 
   public static void main(String[] argv) {

@@ -1,3 +1,5 @@
+package _15_exceptions;
+
 public class ExceptionMethods {
 
   public static void main(String[] args) {

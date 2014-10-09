@@ -1,3 +1,5 @@
+package _15_exceptions;
+
 public class NeverCaught {
 
   static void f() {

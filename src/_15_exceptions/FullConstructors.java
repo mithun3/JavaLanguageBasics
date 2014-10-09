@@ -1,3 +1,5 @@
+package _15_exceptions;
+
 class MyException extends Exception {
   public MyException() {
   }
