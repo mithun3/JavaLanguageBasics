@@ -1,18 +1,20 @@
-enum Apple {  
+package _14_enum;
+
+enum AppleOne {  
   Jonathan, GoldenDel, RedDel, Winsap, Cortland 
 } 
 public class EnumDemo4 { 
   public static void main(String args[])  
   { 
-    Apple ap, ap2, ap3; 
+    AppleOne ap, ap2, ap3; 
     // Obtain all ordinal values using ordinal(). 
-    System.out.println("Here are all apple constants" + 
+    System.out.println("Here are all AppleOne constants" + 
                        " and their ordinal values: "); 
-    for(Apple a : Apple.values()) 
+    for(AppleOne a : AppleOne.values()) 
       System.out.println(a + " " + a.ordinal()); 
-    ap =  Apple.RedDel; 
-    ap2 = Apple.GoldenDel; 
-    ap3 = Apple.RedDel; 
+    ap =  AppleOne.RedDel; 
+    ap2 = AppleOne.GoldenDel; 
+    ap3 = AppleOne.RedDel; 
     System.out.println(); 
     // Demonstrate compareTo() and equals() 
     if(ap.compareTo(ap2) < 0) 

@@ -1,3 +1,5 @@
+package _14_enum;
+
 enum Apple {  
   Jonathan, GoldenDel, RedDel, Winsap, Cortland 
 } 

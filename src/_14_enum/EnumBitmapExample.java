@@ -1,3 +1,5 @@
+package _14_enum;
+
 enum ProgramFlags {
     showErrors(0x01),
     includeFileOutput(0x02),

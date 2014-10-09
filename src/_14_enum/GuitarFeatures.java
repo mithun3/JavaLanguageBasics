@@ -1,3 +1,5 @@
+package _14_enum;
+
 enum GuitarFeatures implements Features {
 
   ROSEWOOD(0),        // back/sides

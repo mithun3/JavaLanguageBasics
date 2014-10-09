@@ -1,3 +1,5 @@
+package _14_enum;
+
 enum Media {
 
   book, music_cd, music_vinyl, movie_vhs, movie_dvd;
@@ -12,8 +14,8 @@ public class MediaFactory {
   public static void main(String[] args) {
     System.out.println(MediaFactory.getMedia("Book"));
   }
-  public static Media getMedia(String s) {
-    return Enum.valueOf(Media.class, s.toLowerCase());
+  public static MediaCollection getMedia(String s) {
+    return Enum.valueOf(MediaCollection.class, s.toLowerCase());
   }
   public static Media getMedia(int n){
     return Media.values()[n];

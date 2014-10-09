@@ -1,17 +1,19 @@
-enum Apple {  
+package _14_enum;
+
+enum AppleThree {  
   Jonathan, GoldenDel, RedDel, Winsap, Cortland 
 } 
 public class EnumDemo { 
   public static void main(String args[])  
   { 
-    Apple ap; 
-    ap = Apple.RedDel; 
+    AppleThree ap; 
+    ap = AppleThree.RedDel; 
     // Output an enum value. 
     System.out.println("Value of ap: " + ap); 
     System.out.println(); 
-    ap = Apple.GoldenDel; 
+    ap = AppleThree.GoldenDel; 
     // Compare two enum values. 
-    if(ap == Apple.GoldenDel)  
+    if(ap == AppleThree.GoldenDel)  
       System.out.println("ap conatins GoldenDel.\n"); 
     // Use an enum to control a switch statement. 
     switch(ap) { 

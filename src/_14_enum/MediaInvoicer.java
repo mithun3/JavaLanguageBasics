@@ -1,14 +1,17 @@
+package _14_enum;
+
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+
 /**
- * MediaInvoicer - Simple applicatin of Media, MediaFactory &c.
+ * MediaInvoicer - Simple applicatin of MediaCollection, MediaFactory &c.
  * 
  * @author ian
  * @version $Id: MediaInvoicer.java,v 1.2 2004/03/08 03:30:59 ian Exp $
@@ -34,7 +37,7 @@ public class MediaInvoicer {
       }
       StringTokenizer st = new StringTokenizer(line);
       st.nextToken();
-      Media m = MediaFactory.getMedia(st.nextToken());
+      MediaCollection m = MediaFactory.getMedia(st.nextToken());
       int stock = Integer.parseInt(st.nextToken());
       int qty = Integer.parseInt(st.nextToken());
       Item tmp = new Item(m, stock, qty);
@@ -46,7 +49,7 @@ public class MediaInvoicer {
 
   /** Inner class for line order item */
   class Item {
-    Media product;
+    MediaCollection product;
     int stockNumber;
     int quantity;
     /**
@@ -54,7 +57,7 @@ public class MediaInvoicer {
      * @param stockNumber
      * @param quantity
      */
-    public Item(Media product, int stockNumber, int quantity) {
+    public Item(MediaCollection product, int stockNumber, int quantity) {
       super();
       this.product = product;
       this.stockNumber = stockNumber;
@@ -89,7 +92,7 @@ public class MediaInvoicer {
 }
 
 
-enum Media {
+enum MediaCollection {
 
   book, music_cd, music_vinyl, movie_vhs, movie_dvd;
 
