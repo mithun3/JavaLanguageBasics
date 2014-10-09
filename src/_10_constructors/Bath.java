@@ -1,3 +1,5 @@
+package _10_constructors;
+
 class Soap {
   private String s;
 

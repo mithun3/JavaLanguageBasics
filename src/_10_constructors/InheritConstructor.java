@@ -1,3 +1,5 @@
+package _10_constructors;
+
 public class InheritConstructor extends SomeOtherClass {
   public static void main(String[] c) {
     new InheritConstructor().run();

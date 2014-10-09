@@ -1,3 +1,5 @@
+package _10_constructors;
+
 class Art {
   Art() {
     System.out.println("Art constructor");

@@ -1,3 +1,5 @@
+package _10_constructors;
+
 class Meal {
   Meal() {
     System.out.println("Meal()");

@@ -1,3 +1,5 @@
+package _10_constructors;
+
 abstract class Glyph {
   abstract void draw();
 

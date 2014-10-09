@@ -1,3 +1,5 @@
+package _10_constructors;
+
 class Rock2 {
   Rock2(int i) {
     System.out.println("Creating Rock number " + i);

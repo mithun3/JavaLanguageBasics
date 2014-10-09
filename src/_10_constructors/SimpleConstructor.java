@@ -1,3 +1,5 @@
+package _10_constructors;
+
 class Rock {
   Rock() { // This is the constructor
     System.out.println("Creating Rock");
